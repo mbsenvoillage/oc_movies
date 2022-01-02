@@ -13,7 +13,6 @@ export async function getBestMovies(url) {
   } catch (e) {
     console.log(e);
   }
-  console.log(bestMovies);
   return bestMovies;
 }
 
@@ -31,6 +30,5 @@ export async function getMovieById(id) {
   } catch (e) {
     console.log(e);
   }
-  console.log(movie);
   return movie;
 }
