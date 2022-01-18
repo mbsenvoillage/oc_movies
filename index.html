@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <link href="main.css" rel="stylesheet" />
+  </head>
   <body>
     <h1>HELLO WORLD</h1>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
     <div>
       <img id="best_movie_img" src="" />
     </div>
-    <button disabled id="best_movies_of_all_time_left_button">Left</button>
-    <div id="best_movies_of_all_time">
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
+    <div class="carousel-container">
+      <button id="best_movies_of_all_time_left_button" class="carousel-button">
+        Left
+      </button>
+      <div id="best_movies_of_all_time" class="slides-container">
+        <img class="slide" />
+        <img class="slide" />
+        <img class="slide" />
+        <img class="slide" />
+        <img class="slide" />
+        <img class="slide" />
+        <img class="slide" />
+      </div>
+      <button id="best_movies_of_all_time_right_button" class="carousel-button">
+        Right
+      </button>
     </div>
-    <button id="best_movies_of_all_time_right_button">Right</button>
-    <button disabled id="best_comedies_left_button">Left</button>
-    <div id="best_comedies">
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
+    <div class="carousel-container">
+      <button id="best_comedies_left_button" class="carousel-button">
+        Left
+      </button>
+      <div id="best_comedies" class="slides-container">
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+      </div>
+      <button id="best_comedies_right_button" class="carousel-button">
+        Right
+      </button>
     </div>
-    <button id="best_comedies_right_button">Right</button>
-    <button disabled id="best_action_movies_left_button">Left</button>
-    <div id="best_action_movies">
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
+    <div class="carousel-container">
+      <button id="best_action_movies_left_button" class="carousel-button">
+        Left
+      </button>
+      <div id="best_action_movies" class="slides-container">
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+      </div>
+      <button id="best_action_movies_right_button" class="carousel-button">
+        Right
+      </button>
     </div>
-    <button id="best_action_movies_right_button">Right</button>
-    <button disabled id="best_adventure_movies_left_button">Left</button>
-    <div id="best_adventure_movies">
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
+    <div class="carousel-container">
+      <button id="best_adventure_movies_left_button" class="carousel-button">
+        Left
+      </button>
+      <div id="best_adventure_movies" class="slides-container">
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+      </div>
+      <button id="best_adventure_movies_right_button" class="carousel-button">
+        Right
+      </button>
     </div>
-    <button id="best_adventure_movies_right_button">Right</button>
     <script type="module" src="app.js"></script>
   </body>
 </html>
