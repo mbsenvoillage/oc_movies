@@ -37,6 +37,8 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  overflow: scroll;
+  height: 80vh;
 }
 
 .close {
@@ -51,4 +53,13 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-movie-info {
+  display: flex;
+  gap: 2%;
+}
+
+.modal-movie-info-title {
+  font-weight: bold;
 }

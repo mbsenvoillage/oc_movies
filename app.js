@@ -7,11 +7,34 @@ const setImageDataAttribute = (element, attribute) => {
 
 const handleMovieClick = (element) => {
   element.onclick = async () => {
+    let modal = document.getElementById("myModal");
+    modal.style.display = "block";
     let movieId = element.getAttribute("data-movie-id");
     let movie = await getMovieById(movieId);
-    let modal = document.getElementById("myModal");
     console.log(movie);
-    modal.style.display = "block";
+    document.getElementById("modal-image").src = movie.image_url;
+    document.getElementById("modal-movie-title").textContent = movie.title;
+    document.getElementById("modal-movie-genres").textContent =
+      movie.genres.join(", ") + ".";
+    document.getElementById("modal-movie-date").textContent =
+      movie.date_published;
+    document.getElementById("modal-movie-rating").textContent = movie.avg_vote;
+    document.getElementById("modal-movie-imdb-rating").textContent =
+      movie.imdb_score;
+    document.getElementById("modal-movie-directors").textContent =
+      movie.directors.join(", ") + ".";
+    document.getElementById("modal-movie-actors").textContent =
+      movie.actors.join(", ") + ".";
+    document.getElementById("modal-movie-length").textContent =
+      movie.duration + " mins";
+    document.getElementById("modal-movie-countries").textContent =
+      movie.countries.join(", ") + ".";
+    document.getElementById("modal-movie-income").textContent =
+      movie.worldwide_gross_income
+        ? movie.worldwide_gross_income + " " + movie.budget_currency
+        : "inconnues";
+    document.getElementById("modal-movie-description").textContent =
+      movie.long_description;
   };
 };
 
