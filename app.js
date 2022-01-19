@@ -5,7 +5,7 @@ const setImageDataAttribute = (element, attribute) => {
   element.setAttribute("data-movie-id", attribute);
 };
 
-const handleMovieClick = (element) => {
+export const handleMovieClick = (element) => {
   element.onclick = async () => {
     let modal = document.getElementById("myModal");
     modal.style.display = "block";
@@ -129,6 +129,9 @@ const main = async () => {
 
   let bestMovieImg = document.getElementById("best_movie_img");
   bestMovieImg.src = bestMovieEver.image_url;
+  let bestMovieTitle = document.getElementById("jumbotron-title");
+  bestMovieTitle.textContent = bestMovieEver.title;
+
   setImageDataAttribute(bestMovieImg, bestMovieEver.id);
   handleMovieClick(bestMovieImg);
 

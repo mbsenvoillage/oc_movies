@@ -1,16 +1,26 @@
+body {
+  display: grid;
+  justify-items: center;
+  background-color: #141414;
+  color: white;
+  grid-gap: 1%;
+}
+
 .carousel-container {
   display: flex;
   align-items: center;
+  width: 90%;
 }
 
 .carousel-button {
-  height: 5%;
+  height: 10%;
 }
 
 .slides-container {
   overflow: hidden;
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .slide {
@@ -62,4 +72,47 @@
 
 .modal-movie-info-title {
   font-weight: bold;
+}
+
+nav {
+  width: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.option {
+  list-style: none;
+  width: 30%;
+  font-size: 26px;
+}
+
+header {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  padding: 2%;
+  width: 90%;
+}
+
+.logo {
+  width: 50%;
+  font-size: 30px;
+}
+
+.jumbotron {
+  display: flex;
+  width: 90%;
+  height: 40vh;
+  align-items: center;
+}
+
+.jumbotron-text-content {
+  width: 30%;
+}
+
+.jumbotron-image-container {
+  width: 70%;
 }
