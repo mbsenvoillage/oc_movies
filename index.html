@@ -13,142 +13,144 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modal-image" />
+          <h2 id="modal-movie-title"></h2>
+          <div class="modal-movie-info">
+            <p id="modal-movie-description"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Genres:</p>
+            <p id="modal-movie-genres"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Date de sortie:</p>
+            <p id="modal-movie-date"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Note:</p>
+            <p id="modal-movie-rating"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Score Imdb:</p>
+            <p id="modal-movie-imdb-rating"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Réalisateurs:</p>
+            <p id="modal-movie-directors"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Acteurs:</p>
+            <p id="modal-movie-actors"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Durée:</p>
+            <p id="modal-movie-length"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Pays:</p>
+            <p id="modal-movie-countries"></p>
+          </div>
+          <div class="modal-movie-info">
+            <p class="modal-movie-info-title">Recettes:</p>
+            <p id="modal-movie-income"></p>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div class="jumbotron-text-content">
+          <p id="jumbotron-title"></p>
+          <button class="jumbotron-button">Play</button>
+        </div>
+        <div class="jumbotron-image-container">
+          <img id="best_movie_img" src="" />
+        </div>
+      </div>
+      <div class="category-title">
+        <h2>Films les mieux notés</h2>
+      </div>
+      <div class="carousel-container">
+        <div id="best_movies_of_all_time_left_button" class="carousel-button">
+          <img src="/imgs/left.svg" />
+        </div>
+        <div id="best_movies_of_all_time" class="slides-container">
+          <img class="slide" />
+          <img class="slide" />
+          <img class="slide" />
+          <img class="slide" />
+          <img class="slide" />
+          <img class="slide" />
+          <img class="slide" />
+        </div>
+        <div id="best_movies_of_all_time_right_button" class="carousel-button">
+          <img src="/imgs/right.svg" />
+        </div>
+      </div>
+      <div class="category-title">
+        <h2>Les meilleures comédies</h2>
+      </div>
+      <div class="carousel-container">
+        <div id="best_comedies_left_button" class="carousel-button">
+          <img src="/imgs/left.svg" />
+        </div>
+        <div id="best_comedies" class="slides-container">
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+        </div>
+        <div id="best_comedies_right_button" class="carousel-button">
+          <img src="/imgs/right.svg" />
+        </div>
+      </div>
+      <div class="category-title">
+        <h2>Les meilleurs films d'action</h2>
+      </div>
+      <div class="carousel-container">
+        <div id="best_action_movies_left_button" class="carousel-button">
+          <img src="/imgs/left.svg" />
+        </div>
+        <div id="best_action_movies" class="slides-container">
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+        </div>
+        <div id="best_action_movies_right_button" class="carousel-button">
+          <img src="/imgs/right.svg" />
+        </div>
+      </div>
+      <div class="category-title">
+        <h2>Les meilleurs films d'aventure</h2>
+      </div>
+      <div class="carousel-container">
+        <div id="best_adventure_movies_left_button" class="carousel-button">
+          <img src="/imgs/left.svg" />
+        </div>
+        <div id="best_adventure_movies" class="slides-container">
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+        </div>
+        <div id="best_adventure_movies_right_button" class="carousel-button">
+          <img src="/imgs/right.svg" />
+        </div>
+      </div>
+    </main>
 
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <img id="modal-image" />
-        <h2 id="modal-movie-title"></h2>
-        <div class="modal-movie-info">
-          <p id="modal-movie-description"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Genres:</p>
-          <p id="modal-movie-genres"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Date de sortie:</p>
-          <p id="modal-movie-date"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Note:</p>
-          <p id="modal-movie-rating"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Score Imdb:</p>
-          <p id="modal-movie-imdb-rating"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Réalisateurs:</p>
-          <p id="modal-movie-directors"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Acteurs:</p>
-          <p id="modal-movie-actors"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Durée:</p>
-          <p id="modal-movie-length"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Pays:</p>
-          <p id="modal-movie-countries"></p>
-        </div>
-        <div class="modal-movie-info">
-          <p class="modal-movie-info-title">Recettes:</p>
-          <p id="modal-movie-income"></p>
-        </div>
-      </div>
-    </div>
-    <div class="jumbotron">
-      <div class="jumbotron-text-content">
-        <p id="jumbotron-title"></p>
-        <button class="jumbotron-button">Play</button>
-      </div>
-      <div class="jumbotron-image-container">
-        <img id="best_movie_img" src="" />
-      </div>
-    </div>
-    <div class="category-title">
-      <h2>Films les mieux notés</h2>
-    </div>
-    <div class="carousel-container">
-      <div id="best_movies_of_all_time_left_button" class="carousel-button">
-        <img src="/imgs/left.svg" />
-      </div>
-      <div id="best_movies_of_all_time" class="slides-container">
-        <img class="slide" />
-        <img class="slide" />
-        <img class="slide" />
-        <img class="slide" />
-        <img class="slide" />
-        <img class="slide" />
-        <img class="slide" />
-      </div>
-      <div id="best_movies_of_all_time_right_button" class="carousel-button">
-        <img src="/imgs/right.svg" />
-      </div>
-    </div>
-    <div class="category-title">
-      <h2>Les meilleures comédies</h2>
-    </div>
-    <div class="carousel-container">
-      <div id="best_comedies_left_button" class="carousel-button">
-        <img src="/imgs/left.svg" />
-      </div>
-      <div id="best_comedies" class="slides-container">
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-      </div>
-      <div id="best_comedies_right_button" class="carousel-button">
-        <img src="/imgs/right.svg" />
-      </div>
-    </div>
-    <div class="category-title">
-      <h2>Les meilleurs films d'action</h2>
-    </div>
-    <div class="carousel-container">
-      <div id="best_action_movies_left_button" class="carousel-button">
-        <img src="/imgs/left.svg" />
-      </div>
-      <div id="best_action_movies" class="slides-container">
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-      </div>
-      <div id="best_action_movies_right_button" class="carousel-button">
-        <img src="/imgs/right.svg" />
-      </div>
-    </div>
-    <div class="category-title">
-      <h2>Les meilleurs films d'aventure</h2>
-    </div>
-    <div class="carousel-container">
-      <div id="best_adventure_movies_left_button" class="carousel-button">
-        <img src="/imgs/left.svg" />
-      </div>
-      <div id="best_adventure_movies" class="slides-container">
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-      </div>
-      <div id="best_adventure_movies_right_button" class="carousel-button">
-        <img src="/imgs/right.svg" />
-      </div>
-    </div>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
